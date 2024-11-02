@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        th, td {
+            border: 1px solid black;
+        }
+
+        tfoot{
+            background-color:cyan ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabela</h1>
+
+    <table>    <!--Serve para criar uma tabela -->   <!--Serve para criar uma tabela -->
+
+        <thead>  <!--criar cabeçalho -->
+            <tr>  <!--criar linha -->
+                <th>Produto</th>   <!--criar coluna -->
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black friday</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>  <!--criar corpo dos dados -->
+            <tr>
+
+                <td>Produto 1</td>  <!--criar cada dado do produto -->
+                <td>2</td>
+                <td>5$</td>
+                <td rowspan="2">Sim</td> <!--espandir 2 linhas -->
+            </tr>
+
+            <tr>
+                <td>Produto 2</td>
+                <td>5</td>
+                <td>10$</td>
+                <!-- <td>Sim</td> -->
+            </tr>
+
+            <tr>
+                <td>Produto 3</td>
+                <td>3</td>
+                <td>15$</td>
+                <td>Não</td>
+
+            </tr>
+        </tbody>
+
+        <tfoot>   <!--criar o rodapé -->
+            <tr>
+                <td colspan="3">Total</td> <!--espandindo 3 colunas -->
+                <td>30</td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+</body>
+
+</html>
